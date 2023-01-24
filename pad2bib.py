@@ -1,7 +1,7 @@
 # Function to remove first lines. Taken from https://stackoverflow.com/questions/61681088/how-to-delete-lines-from-a-file-until-a-specific-character-python
 def erase(file_name: str, start_key: str, stop_key: str):
     """
-    This function will delete all line from the givin start_key
+    This function will delete all lines from the given start_key
     until the stop_key. (include: start_key) (exclude: stop_key)
     """
     try: 
@@ -33,4 +33,4 @@ file.close()
 fout = open("biblio.bib", "wt")
 fout.write(replacement)
 fout.close()
-erase("biblio.bib","          ","    A")
+erase("biblio.bib","    Hello, here is an attempt to establish a shared bibliography in BibTex format (to facilitate exports to Zotero :)) Thank you for contributing by respecting the formalism below.","    A")
