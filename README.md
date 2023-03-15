@@ -5,18 +5,9 @@ Repris dans une dépôt Github: https://github.com/BartM82/Bibliography
 
 ## Etapes
 
-- Copier le contenu du pad dans `biblio.bib`.
-- Puis :
-  
   ```bash
-  # Met des clés correctes dans le BibteX et enlève les commentaires superflus
-  python pad2bib.py
-  # Compilation du LateX
+  # Récupération du bibteX original, pré-traitement et compilation du LateX
   make
   # Suppression des fichiers intermédiaires (sauf le PDF !)
   make clean
   ```
-
-## Todo
-
-Possible de récupérer directement le contenu du pad ? (sinon scraping)
