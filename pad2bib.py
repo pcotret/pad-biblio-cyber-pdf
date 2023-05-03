@@ -1,3 +1,4 @@
+import re
 # Function to remove first lines. Taken from https://stackoverflow.com/questions/61681088/how-to-delete-lines-from-a-file-until-a-specific-character-python
 def erase(file_name: str, start_key: str, stop_key: str):
     """
@@ -24,9 +25,11 @@ file = open("biblio.bib", "rt")
 replacement = ""
 number=-1
 for line in file:
-    if "étiquette" in line:
+    changes=line
+    if "@book" in line:
         number=number+1
-    changes = line.replace("étiquette", str(number))
+        line=re.sub("\[.*?\]","[]",line)
+        changes = "@book{"+str(number)+",\n"
     replacement = replacement + changes
 
 file.close()
