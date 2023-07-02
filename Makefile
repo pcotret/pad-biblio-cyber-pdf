@@ -1,4 +1,4 @@
-CURRENT_BIB=mai_2023
+CURRENT_BIB=juillet_2023
 all:
 	wget https://raw.githubusercontent.com/BartM82/Bibliography/main/$(CURRENT_BIB).bib 
 	mv $(CURRENT_BIB).bib biblio.bib
