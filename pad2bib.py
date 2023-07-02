@@ -30,6 +30,10 @@ for line in file:
         number=number+1
         line=re.sub("\[.*?\]","[]",line)
         changes = "@book{"+str(number)+",\n"
+    if "@booK" in line:
+        number=number+1
+        line=re.sub("\[.*?\]","[]",line)
+        changes = "@book{"+str(number)+",\n"
     replacement = replacement + changes
 
 file.close()
