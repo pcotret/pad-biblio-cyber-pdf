@@ -34,8 +34,9 @@ for line in file:
         number=number+1
         line=re.sub("\[.*?\]","[]",line)
         changes = "@book{"+str(number)+",\n"
+    if "@comment" in line:
+        changes="\n"
     replacement = replacement + changes
-
 file.close()
 fout = open("biblio.bib", "wt")
 fout.write(replacement)
