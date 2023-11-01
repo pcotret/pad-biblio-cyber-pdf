@@ -1,6 +1,6 @@
-CURRENT_BIB=Octobre_2023
+CURRENT_BIB=Biblio_Oct_23
 all:
-	wget https://raw.githubusercontent.com/pcotret/Bibliography/patch-1/$(CURRENT_BIB).bib
+	wget https://raw.githubusercontent.com/pcotret/Bibliography/main/$(CURRENT_BIB).bib
 	mv $(CURRENT_BIB).bib biblio.bib
 	python3 pad2bib.py
 	pdflatex main.tex
