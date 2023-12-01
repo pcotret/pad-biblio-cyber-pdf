@@ -1,4 +1,4 @@
-CURRENT_BIB=Biblio_Oct_23
+CURRENT_BIB=Biblio_Nov_23
 all:
 	wget https://raw.githubusercontent.com/M82-project/Bibliography/main/$(CURRENT_BIB).bib
 	mv $(CURRENT_BIB).bib biblio.bib
