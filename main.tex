@@ -2,18 +2,27 @@
 \usepackage[frenchb]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage[left=1.5cm,right=1.5cm,top=2cm,bottom=2cm]{geometry}
 \usepackage{float}
 \usepackage{hyperref}
+\usepackage{multibib}
 \author{Révision \today}
 \title{Pad Bibliographie Cyber}
 \date{}
+\newcites{cur}{Bibliographie courante}
+\newcites{phd}{Articles essentiels}
+\newcites{art}{Thèses et rapports}
 \begin{document}
 \maketitle
 \begin{center}
-Extrait du \href{https://github.com/M82-project/Bibliography}{dépôt de M82}\\Compte BlueSky : \href{https://bsky.app/profile/m82.bsky.social}{@m82.bsky.social} et Mastodon \href{https://infosec.exchange/@M82_project}{@M82\_project@infosec.exchange} \nocite{*}
+Extrait du \href{https://github.com/M82-project/Bibliography}{dépôt de M82}\\Compte BlueSky : \href{https://bsky.app/profile/m82.bsky.social}{@m82.bsky.social} et Mastodon \href{https://infosec.exchange/@M82_project}{@M82\_project@infosec.exchange} \nocitecur{*}
+\nociteart{*}
+\nocitephd{*}
 \end{center}
-\renewcommand{\thepage}{}
-\bibliographystyle{plainurl}
-\bibliography{biblio}
+\bibliographystylecur{plainurl}
+\bibliographystyleart{plainurl}
+\bibliographystylephd{plainurl}
+\bibliographycur{bcur}
+\bibliographyart{bart}
+\bibliographyphd{bphd}
 \end{document}

@@ -21,7 +21,7 @@ def erase(file_name: str, start_key: str, stop_key: str):
         print(f"erase error:\n\t{ex}")
 
 # Main program
-file = open("biblio.bib", "rt")
+file = open("bcur.bib", "rt")
 replacement = ""
 number=-1
 for line in file:
@@ -38,7 +38,7 @@ for line in file:
         changes="\n"
     replacement = replacement + changes
 file.close()
-fout = open("biblio.bib", "wt")
+fout = open("bcur.bib", "wt")
 fout.write(replacement)
 fout.close()
-erase("biblio.bib","    Hello, here is an attempt to establish a shared bibliography in BibTex format (to facilitate exports to Zotero :)) Thank you for contributing by respecting the formalism below.","    A")
+erase("bcur.bib","    Hello, here is an attempt to establish a shared bibliography in BibTex format (to facilitate exports to Zotero :)) Thank you for contributing by respecting the formalism below.","    A")
