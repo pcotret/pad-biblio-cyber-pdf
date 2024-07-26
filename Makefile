@@ -10,9 +10,9 @@ all:
 	mv $(THESES).bib bphd.bib
 	python3 pad2bib.py
 	pdflatex main.tex
-	bibtex cur
-	bibtex art
-	bibtex phd
+	bibtex C
+	bibtex A
+	bibtex P
 	pdflatex main.tex
 	pdflatex main.tex
 clean:
