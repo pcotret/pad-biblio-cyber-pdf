@@ -1,6 +1,6 @@
 # pad-biblio-cyber-pdf
 
-Une reprise du pad biblio cyber de [M82 project](https://twitter.com/M82_project) pour être vu dans un format PDF.
+Une reprise du pad biblio cyber de [M82 project](https://bsky.app/profile/m82.bsky.social) pour être vu dans un format PDF.
 Repris dans un dépôt Github: https://github.com/M82-project/Bibliography
 
 ## Etapes
