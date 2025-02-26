@@ -1,4 +1,4 @@
-CURRENT_BIB=Biblio_été_2024
+CURRENT_BIB=Biblio_JAN_2025
 ARTICLES=Articles_essentiels
 THESES=Theses_Rapports
 all:
